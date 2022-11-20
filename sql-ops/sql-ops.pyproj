@@ -21,7 +21,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="database\connection_details.py" />
+    <Compile Include="alert_system\email_alert.py" />
     <Compile Include="sql_ops.py" />
+    <Compile Include="script\sql_script.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="alert_system\" />
+    <Folder Include="database\" />
+    <Folder Include="script\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
